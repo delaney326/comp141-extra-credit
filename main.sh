@@ -20,23 +20,27 @@ touch copy.txt
 #
 mv textfile copy.txt
 #
-alias now= $(date)
+alias now='date'
+#
+source ~/.bashrc
 #
 now > date.txt
 #
-wc textfile > textcount.txt
+mv wc textfile textcount.txt
 #
-ps -fp 1,2,3,4,5 > process.txt
+ps  > process.txt
 #
-ifconfig -s > netstat.txt
+mv ifconfig -s netstat.txt
 #
-mount > mount.txt
+mv mount mount.txt
 #
 touch permissions.txt 
 #
 chmod a+rwx permissions.txt
 #
 TESTENV1="test"
+#
+cat textfile
 #
 grep "^[A-Za-z]" textfile
 #
