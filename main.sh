@@ -4,13 +4,13 @@
 #
 mkdir output
 #
-cp ./textfile ./output
+cp  textfile output
 #
 cd output
 #
 touch read.txt
 #
-mv textfile read.txt
+cp  textfile read.txt
 #
 pwd > pwd.txt
 #
@@ -18,21 +18,21 @@ ls > ls.txt
 #
 touch copy.txt
 #
-mv read.txt  copy.txt
+cp textfile  copy.txt
 #
-alias now='date'
+alias nowdate='date'
 #
 source ~/.bashrc
 #
-mv now date.txt
+nowdate > date.txt
 #
-mv wc textfile textcount.txt
+wc textfile >  textcount.txt
 #
 ps  > process.txt
 #
-mv ifconfig -s netstat.txt
+ifconfig -s  >  netstat.txt
 #
-mv mount mount.txt
+mount >  mount.txt
 #
 touch permissions.txt 
 #
