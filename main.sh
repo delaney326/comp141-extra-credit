@@ -18,13 +18,13 @@ ls > ls.txt
 #
 touch copy.txt
 #
-mv textfile copy.txt
+mv read.txt  copy.txt
 #
 alias now='date'
 #
 source ~/.bashrc
 #
-now > date.txt
+mv now date.txt
 #
 mv wc textfile textcount.txt
 #
